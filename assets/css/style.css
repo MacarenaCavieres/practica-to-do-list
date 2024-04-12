@@ -2,22 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Philosopher", sans-serif;
 }
 
 body {
     color: white;
-    background: linear-gradient(rgba(3, 3, 3, 0.829), rgba(0, 0, 0, 0.932)), url("../img/fondo.jpg");
+    background: linear-gradient(rgba(51, 50, 50, 0.932), rgba(0, 0, 0, 0.932)), url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .container {
@@ -36,20 +38,22 @@ form {
 input {
     width: 89%;
     height: 40px;
-    padding: 5px;
+    padding: 10px;
     border: solid 1px black;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .boton {
     height: 40px;
     width: 10%;
-    border: solid 1px rgb(0, 0, 0);
+    border: solid 1px #f0b86e;
     border-radius: 5px;
-    background-color: #ecca9c;
+    background-color: #f0b86e;
     font-weight: bold;
     color: white;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -79,20 +83,21 @@ article {
     margin-top: 1rem;
     padding: 20px;
     align-items: center;
-    box-shadow: 50px 50px 50prgb (248, 248, 248) 0a;
+    background-color: rgba(77, 71, 71, 0.685);
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.623);
 }
 
 p {
-    /* padding: 0; */
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .btnEliminar {
     height: 40px;
-    width: 10%;
-    border: solid 1px rgb(0, 0, 0);
+    width: 5%;
+    border: solid 0.5px #d83f31;
     border-radius: 5px;
-    background-color: #dd7349;
+    background-color: #d83f31;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
