@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: linear-gradient(rgba(3, 3, 3, 0.856), rgba(0, 0, 0, 0.856)), url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin-block: 2rem;
+    width: 80vw;
+    border: solid 1px black;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+p {
+    list-style: none;
+    padding: 0;
+}
