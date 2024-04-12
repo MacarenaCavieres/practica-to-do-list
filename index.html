@@ -15,17 +15,41 @@
     <body>
         <main class="container">
             <h1>Agrega tus tareas</h1>
-            <form>
+            <form id="formulario">
                 <input type="text" name="tarea" id="tarea" placeholder="Ingrese tareas" />
                 <button id="btn" type="submit" class="boton">Agregar</button>
             </form>
-
-            <section class="container-tareas"></section>
+            <p class="alerta"></p>
+            <section class="container-tareas" id="contenidoTareas">
+                <article>
+                    <div class="conf-g">
+                        <p class="conf-f-h">Fecha <span class="fecha">12-02-2024</span></p>
+                        <p class="conf-f-h">Hora <span class="hora"></span>15:49:14</p>
+                    </div>
+                    <div class="conf-t-b">
+                        <p class="tanda">
+                            1era tarea 1era tarea 1era tarea 1era tarea 1era tarea 1era tarea 1era tarea 1era
+                            tarea 1era tarea 1era tarea 1era tarea 1era tarea
+                        </p>
+                        <button class="btnEliminar" type="button">X</button>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <p class="conf-f-h">Fecha <span class="fecha">12-02-2024</span></p>
+                        <p class="conf-f-h">Hora <span class="hora"></span>15:49:14</p>
+                    </div>
+                    <div class="conf-t-b">
+                        <p class="tanda">1era tarea 1era tarea 1era tarea 1era tare</p>
+                        <button class="btnEliminar" type="button">X</button>
+                    </div>
+                </article>
+            </section>
         </main>
 
-        <template>
+        <template id="template">
             <article>
-                <p>1era tarea</p>
+                <p class="tanda">1era tarea</p>
                 <button class="btnEliminar" type="button">X</button>
             </article>
         </template>
