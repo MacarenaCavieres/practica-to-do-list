@@ -29,19 +29,38 @@ h1 {
 }
 
 form {
-    display: flex;
-    justify-content: space-between;
+    text-align: left;
     margin-block: 16px;
     width: 100%;
 }
 
-input {
-    width: 89%;
+.grupo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+.tarea,
+.limite {
     height: 40px;
     padding: 10px;
     border: solid 1px black;
     border-radius: 5px;
     font-size: 17px;
+}
+
+.tarea {
+    width: 100%;
+}
+
+.limite {
+    width: 30%;
 }
 
 .boton {
@@ -54,6 +73,7 @@ input {
     color: white;
     font-size: 15px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .container-tareas {
@@ -84,15 +104,16 @@ div {
     display: flex;
     flex-direction: column;
     font-weight: 700;
+    padding-right: 10px;
 }
 
 .conf-t-b {
     width: 100%;
 }
 
-.fecha,
-.hora {
+.fecha {
     width: 110px;
+    font-size: 17px;
 }
 
 .btnEliminar {
@@ -106,15 +127,22 @@ div {
     cursor: pointer;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 35px;
     }
     form {
         display: block;
+        justify-content: center;
+        text-align: center;
     }
 
-    input {
+    .grupo {
+        display: block;
+    }
+
+    input,
+    .limite {
         width: 100%;
         font-size: 13px;
     }
@@ -122,23 +150,19 @@ div {
     .boton {
         margin-top: 10px;
         width: 30%;
+        margin-left: 0;
     }
 
     article {
         padding: 7px;
     }
 
-    .fecha,
-    .hora {
+    .fecha {
         width: 50px;
+        font-size: 10px;
     }
 
-    .fecha {
-        margin-right: 10px;
-    }
-
-    p,
-    .fecha {
-        font-size: 15px;
+    p {
+        font-size: 12px;
     }
 }
