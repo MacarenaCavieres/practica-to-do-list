@@ -7,7 +7,7 @@
 
 body {
     color: white;
-    background: linear-gradient(rgba(51, 50, 50, 0.932), rgba(0, 0, 0, 0.932)), url("../img/fondo.jpg");
+    background: linear-gradient(rgba(51, 50, 50, 0.932), rgba(51, 50, 50, 0.932)), url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,7 +25,7 @@ h1 {
 .container {
     text-align: center;
     margin-block: 2rem;
-    width: 90vw;
+    width: 80vw;
 }
 
 form {
@@ -109,6 +109,13 @@ div {
 
 .conf-t-b {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tanda {
+    margin: 0 auto;
 }
 
 .fecha {
@@ -128,6 +135,9 @@ div {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 95vw;
+    }
     h1 {
         font-size: 35px;
     }
@@ -141,11 +151,10 @@ div {
     .grupo {
         display: block;
     }
-
-    input,
+    .tarea,
     .limite {
         width: 100%;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .boton {
@@ -165,6 +174,6 @@ div {
     }
 
     p {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
