@@ -4,7 +4,14 @@ const alerta = document.querySelector(".alerta");
 const template = document.querySelector("#template").content;
 const fragment = document.createDocumentFragment();
 
-const arrayTareas = [];
+let arrayTareas = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("arrayTareas")) {
+        arrayTareas = JSON.parse(localStorage.getItem("arrayTareas"));
+        pintarTarea();
+    }
+});
 
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -12,15 +19,13 @@ formulario.addEventListener("submit", (e) => {
     pintarTarea();
 
     tarea.value = "";
+    limite.value = "";
 });
 
 const agregarTarea = () => {
     const tarea = document.querySelector("#tarea").value;
-    const fechaInput = document.querySelector("#limite").value;
-
-    const termino = new Date(fechaInput).toLocaleString();
-
-    console.log(termino);
+    const fechaInput = document.querySelector("#limite").value.toLocaleString();
+    const termino = fechaInput.split("-").reverse().join("-");
 
     if (!tarea.trim()) {
         alerta.style.color = "red";
@@ -41,6 +46,7 @@ const agregarTarea = () => {
 };
 
 const pintarTarea = () => {
+    localStorage.setItem("arrayTareas", JSON.stringify(arrayTareas));
     contenidoTareas.textContent = "";
 
     arrayTareas.forEach((item) => {
